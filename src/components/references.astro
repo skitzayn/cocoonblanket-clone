@@ -1,0 +1,43 @@
+---
+import wsj from '../assets/images/wsj.png'
+import vogue from '../assets/images/vogue.png'
+import inStyle from '../assets/images/in-style.png'
+import apartTherapy from '../assets/images/apart-therapy.png'
+import boh from '../assets/images/boh.png'
+---
+
+<div class="px-4 py-14 font-light">
+
+    <div class="grid gap-6">
+
+        <div class="flex justify-center items-center">
+            <p class="text-2xl">
+                As Seen In
+            </p>
+        </div>
+
+        <div class="grid grid-flow-row grid-cols-5 gap-8 items-center justify-items-center">
+
+            <div>
+                <img src={wsj.src} alt="WSJ" class="h-8 md:h-12 w-auto object-contain">
+            </div>
+
+            <div>
+                <img src={vogue.src} alt="Vogue" class="h-8 md:h-12 w-auto object-contain">
+            </div>
+
+            <div>
+                <img src={inStyle.src} alt="InStyle" class="h-8 md:h-12 w-auto object-contain">
+            </div>
+
+            <div>
+                <img src={apartTherapy.src} alt="Apartment Therapy" class="h-8 md:h-12 w-auto object-contain">
+            </div>
+
+            <div>
+                <img src={boh.src} alt="BOH" class="h-8 md:h-12 w-auto object-contain">
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,86 @@
+---
+import reviewOne from '../assets/images/review-1.webp'
+import reviewTwo from '../assets/images/review-2.jpg'
+import reviewThree from '../assets/images/review-3.jpg'
+---
+
+<section class="w-full px-4 py-30 font-light">
+    
+    <div class="flex justify-between items-end mb-8">
+
+        <h2 class="text-6xl font-marcellus max-[950px]:text-5xl max-[780px]:text-4xl max-[605px]:text-3xl max-[545px]:text-2xl">SOMETHING FOR EVERYONE</h2>
+        
+        <div class="flex gap-6 text-xl font-normal">
+            <button class="custom-prev hover:opacity-50 transition-opacity cursor-pointer">←</button>
+            <button class="custom-next hover:opacity-50 transition-opacity cursor-pointer">→</button>
+        </div>
+
+    </div>
+
+    <div class="swiper mySwiper">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide h-auto! w-full relative overflow-hidden">
+                <img src={reviewOne.src} alt="Cocoon Blanket" class="absolute inset-0 w-full h-full object-cover">
+            </div>
+            
+            <div class="swiper-slide h-auto!">
+
+                <div class="h-full border px-8 py-8 flex flex-col justify-between gap-30 max-[1140px]:gap-0">
+
+                    <p class="text-2xl">
+                        "This blanket is simply the softest most luxurious one I have ever owned. My child adores it and is constantly wanting to stroke it. She literally can't stop smiling when she is on it."
+                    </p>
+
+                    <div class="mt-8">
+                        <p class="text-black text-2xl">Nicky W.</p>
+                        <p class="text-sm text-gray-400">Mist</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="swiper-slide h-auto! w-full relative overflow-hidden">
+                <img src={reviewTwo.src} alt="Cocoon Blanket" class="absolute inset-0 w-full h-full object-cover">
+            </div>
+            
+            <div class="swiper-slide h-auto!">
+
+                <div class="h-full border p-6 md:p-8 flex flex-col justify-between gap-30">
+
+                    <p class="text-2xl">
+                        "This is probably one of the most gorgeous blankets I’ve ever laid my eyes on."
+                    </p>
+
+                    <div class="mt-8">
+                        <p class="text-black text-2xl">Savannah M.</p>
+                        <p class="text-sm text-gray-400">Moss Wash</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="swiper-slide h-auto! w-full relative overflow-hidden gap-30">
+                <img src={reviewThree.src} alt="Cocoon Blanket" class="absolute inset-0 w-full h-full object-cover">
+            </div>
+            
+            <div class="swiper-slide h-auto!">
+
+                <div class="h-full border p-6 md:p-8 flex flex-col justify-between">
+
+                    <p class="text-2xl">
+                        "This is by far the best and softest blanket I've ever had. I can't imagine our lives without it. My girlfriend and I literally talk about it every single day."
+                    </p>
+
+                    <div class="mt-8">
+                        <p class="text-black text-2xl">Michael A.</p>
+                        <p class="text-sm text-gray-400">Silk</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

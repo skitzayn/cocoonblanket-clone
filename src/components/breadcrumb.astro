@@ -1,0 +1,45 @@
+---
+import bcVideo from '../assets/videos/bc-video.mp4';
+---
+
+<div class="relative w-full h-screen">
+
+    <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover z-10">
+        <source src={bcVideo} type="video/mp4">
+    </video>
+
+    <div class="absolute z-20 w-full h-screen inset-0 flex items-end justify-between max-[610px]:justify-center text-white px-4 pb-4 text-sm font-light">
+        
+        <div class="flex flex-col gap-4">
+
+            <p class="text-7xl font-normal max-[1000px]:text-6xl max-[610px]:text-5xl font-marcellus">
+                A SOFTER<br>
+                SILHOUETTE<br>
+                FOR EVERYDAY
+            </p>
+
+            <div class="flex flex-row gap-4 max-[610px]:hidden">
+                
+                <a href="#" class="px-10 border py-4 flex hover:bg-white hover:text-black hover:border-white transition-all duration-400">Shop All</a>
+                <a href="#" class="px-10 border py-4 flex hover:bg-white hover:text-black hover:border-white transition-all duration-400">Find My Blanket</a>
+
+            </div>
+
+            <div class="grid grid-cols-2 min-[1000px]:hidden max-[610px]:grid-cols-1">
+                <p>Rooted in softness, warmth, and everyday ritual. Cocoon transforms moments of rest into something quietly luxurious.</p>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4 min-[610px]:hidden">
+
+                <a href="#" class="px-10 border py-4 flex hover:bg-white hover:text-black hover:border-white transition-all duration-400 justify-center items-center text-center">Shop All</a>
+                <a href="#" class="px-10 border py-4 flex hover:bg-white hover:text-black hover:border-white transition-all duration-400 justify-center items-center text-center">Find My Blanket</a>
+
+            </div>
+        </div>
+
+        <div class="grid w-106 max-[1000px]:hidden">
+            <p>Rooted in softness, warmth, and everyday ritual. Cocoon transforms moments of rest into something quietly luxurious.</p>
+        </div>
+
+    </div>
+</div>

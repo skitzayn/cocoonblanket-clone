@@ -1,0 +1,134 @@
+---
+import foundersFav from '../assets/images/founders-fav.png'
+import newArrivals from '../assets/images/new-arrivals.jpg'
+
+import sixProTwo from '../assets/images/six-product-2.jpg'
+import sixProTwoHover from '../assets/images/six-product-2-hover.jpg'
+
+import sixProThree from '../assets/images/six-product-3.jpg'
+import sixProThreeHover from '../assets/images/six-product-3-hover.jpg'
+
+import sixProFour from '../assets/images/six-product-4.jpg'
+import sixProFourHover from '../assets/images/six-product-4-hover.jpg'
+
+import sixProFive from '../assets/images/six-product-5.jpg'
+import sixProFiveHover from '../assets/images/six-product-5-hover.jpg'
+---
+
+<section class="w-full grid grid-cols-4 max-[1140px]:grid-cols-2 items-start font-sans px-4 pt-4 gap-4 text-white font-light">
+
+    <div class="relative col-span-2 aspect-24/25 overflow-hidden">
+
+        <div class="relative w-full h-full">
+
+            <img src={foundersFav.src} alt="Founder's Favorites" class="parallax-img absolute w-full h-[130%] top-[-15%] object-cover will-change-transform">
+            <div class="absolute inset-0 bg-linear-to-t from-black/80 via-black/10 to-transparent"></div>
+
+        </div>
+
+        <div class="absolute inset-0 flex flex-col justify-end gap-6 px-4 pb-4">
+
+            <h2 class="self-start text-6xl leading-none font-normal font-marcellus">
+                FOUNDER'S<br/>
+                FAVORITES
+            </h2>
+
+            <div class="self-end w-[45%] max-w-[288px] flex flex-col gap-6">
+
+                <p class="text-[clamp(0.625rem,1.1vw,1rem)] leading-snug">Our most-loved Cocoons, in the shades that go with everything and the texture you have to feel to understand. Designed to stay out, not folded away. If you only get one, make it one of these.</p>
+                <a href="#" class="px-[clamp(1rem,3vw,2.5rem)] border py-[clamp(0.25rem,0.8vw,0.75rem)] text-[clamp(0.625rem,1.1vw,1rem)] flex hover:bg-white hover:text-black hover:border-white transition-all duration-400 justify-center items-center text-center">Shop All</a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full text-black">
+
+        <a href="#" class="group relative block w-full aspect-4/5">
+
+            <img src={sixProTwo.src} alt="No. 008 Loam" class="w-full h-full object-cover">
+            <img src={sixProTwoHover.src} alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-250">
+
+        </a>
+
+        <div class="flex justify-between gap-2">
+            <p>No. 008 Loam</p>
+            <p>From $195.00</p>
+        </div>
+
+    </div>
+
+    <div class="w-full text-black">
+
+        <a href="#" class="group relative block w-full aspect-4/5">
+
+            <img src={sixProThree.src} alt="No. 015 Primrose Stripe" class="w-full h-full object-cover">
+            <img src={sixProThreeHover.src} alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-250">
+
+        </a>
+        
+        <div class="flex justify-between gap-2">
+            <p>No. 015 Primrose Stripe</p>
+            <p>From $195.00</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="w-full grid grid-cols-4 max-[1140px]:grid-cols-2 items-start font-sans px-4 pt-4 gap-4 text-white font-thin">
+
+    <div class="w-full text-black">
+
+        <a href="#" class="group relative block w-full aspect-4/5">
+            <img src={sixProFour.src} alt="No. 008 Loam" class="w-full h-full object-cover">
+            <img src={sixProFourHover.src} alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-250">
+        </a>
+
+        <div class="flex justify-between gap-2">
+            <p>No. 012 Moss Wash</p>
+            <p>From $195.00</p>
+        </div>
+
+    </div>
+
+    <div class="w-full text-black">
+
+        <a href="#" class="group relative block w-full aspect-4/5">
+            <img src={sixProFive.src} alt="No. 015 Primrose Stripe" class="w-full h-full object-cover">
+            <img src={sixProFiveHover.src} alt="" class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-250">
+        </a>
+        
+        <div class="flex justify-between gap-2">
+            <p>No. 016 Camellia Stripe</p>
+            <p>From $195.00</p>
+        </div>
+
+    </div>
+
+    <div class="relative col-span-2 aspect-24/25 overflow-hidden">
+
+        <div class="relative w-full h-full">
+            
+            <img src={newArrivals.src} alt="New Arrivals" class="parallax-img absolute w-full h-[130%] top-[-15%] object-cover will-change-transform">
+            <div class="absolute inset-0 bg-linear-to-t from-black/80 via-black/10 to-transparent"></div>
+
+        </div>
+        
+        <div class="absolute inset-0 flex flex-col justify-end gap-6 px-4 pb-4">
+
+            <h2 class="self-start text-6xl leading-none font-normal font-marcellus">
+                NEW<br/>
+                ARRIVALS
+            </h2>
+
+            <div class="self-end w-[45%] max-w-[288px] flex flex-col gap-6">
+
+                <p class="text-[clamp(0.625rem,1.1vw,1rem)] leading-snug">Our most-loved Cocoons, in the shades that go with everything and the texture you have to feel to understand. Designed to stay out, not folded away. If you only get one, make it one of these.</p>
+                <a href="#" class="px-[clamp(1rem,3vw,2.5rem)] border py-[clamp(0.25rem,0.8vw,0.75rem)] text-[clamp(0.625rem,1.1vw,1rem)] flex hover:bg-white hover:text-black hover:border-white transition-all duration-400 justify-center items-center text-center">Shop All</a>
+
+            </div>
+        </div>
+    </div>
+
+</section>

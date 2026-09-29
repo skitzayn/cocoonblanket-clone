@@ -1,0 +1,28 @@
+---
+import cocoonLogo from '../assets/images/cocoon-logo-black.png'
+---
+
+<header>
+    <div id="main-header" class="fixed flex w-full items-center justify-between px-4 py-4 text-white font-light z-9999 transition-colors duration-300">
+
+        <div>
+            <ul class="flex gap-8">
+                <a href="#"><li>Shop</li></a>
+                <a href="#" class="max-[745px]:hidden"><li>About Us</li></a>
+            </ul>
+        </div>
+
+        <div>
+            <a href="#">
+                <img id="header-logo" src={cocoonLogo.src} alt="Logo" width="40" class="invert transition-all duration-300">
+            </a>
+        </div>
+
+        <div>
+            <ul class="flex gap-8">
+                <a href="#"><li>Search</li></a>
+                <a href="#" class="max-[745px]:hidden"><li>Bag</li></a>
+            </ul>
+        </div>
+    </div>
+</header>
